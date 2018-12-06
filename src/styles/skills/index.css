@@ -1,0 +1,39 @@
+.skills #skills {
+  width: 75%;
+}
+.skills .skills_add-button {
+  width: 20%;
+  float: right;
+}
+.skills .skills_value {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  padding: 25px 0 0;
+}
+.skills .skills_value .skills_value__title {
+  flex-basis: 10%;
+  color: white;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.skills .skills_value .input-range {
+  flex-basis: 70%;
+}
+.skills .skills_value .input-range .input-range__track--active {
+  background: #f3713c;
+}
+.skills .skills_value .input-range .input-range__slider {
+  background: #f3713c;
+  border: 1px solid #f3713c;
+}
+.skills .skills_value button {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+}
