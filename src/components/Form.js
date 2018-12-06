@@ -57,7 +57,14 @@ class Form extends Component {
         })
         if (valid) {
             console.log(submitObject);
-            fetch("https://nameless-reef-79800.herokuapp.com/", { method: "POST", body: JSON.stringify(submitObject)})
+            fetch("https://nameless-reef-79800.herokuapp.com/", { 
+                method: "POST", 
+                body: JSON.stringify(submitObject),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            })
             .then(res=>console.log(res))
             .catch((err) => console.log(err));
         }
