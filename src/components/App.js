@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {connect} from 'react-redux';
+
 import Form from './Form';
 
-const App = () => {
-    return (
-        <Form />
-    );
+class App extends Component {
+    render() {
+        return (
+            <Form />
+        )
+    };
 }
 
-export default App;
+export default connect(
+    state => ({
+        data: state.inputsStates
+    }),
+    ({})
+)(App);

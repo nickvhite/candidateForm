@@ -1,0 +1,29 @@
+#modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.41);
+  z-index: 1;
+}
+#modal .modal-block {
+  background: white;
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -220px;
+  margin-top: -70px;
+}
+#modal .modal-block .modal-block_text {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+#modal .modal-block .modal-block_close {
+  margin: 0 auto;
+  display: block;
+}

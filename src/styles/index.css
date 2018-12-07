@@ -1,6 +1,8 @@
 @import './container/index.css';
 @import './skills/index.css';
 @import './experience/index.css';
+@import './loader/index.css';
+@import './modal/index.css';
 
 *{
     margin: 0;

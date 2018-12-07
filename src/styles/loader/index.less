@@ -1,0 +1,35 @@
+#preloader {
+    position: relative;
+    display: flex;
+
+    .spinWrap {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      margin: auto;
+      .loader {
+        box-sizing: border-box;
+        background-color: transparent;
+        -webkit-animation: rotation .7s infinite linear;
+        animation: rotation .7s infinite linear;
+        border-left: 5px solid #cbcbca;
+        border-right: 5px solid #cbcbca;
+        border-bottom: 5px solid #cbcbca;
+        border-top: 5px solid #2d3d40;
+        border-radius: 100%;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        opacity: 1;
+      }
+    }
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }

@@ -26,7 +26,6 @@ const initialState = {
     },
     phone: {
         value: '+38(0',
-        minLength: 17,
         err: false,
         label: 'Phone number *',
         required: true,
@@ -139,7 +138,13 @@ export default function inputsStates(state = initialState, action) {
         }
         case PUSH_SKILL: {
             if (!state.skills.inputValue) {
-                return state;
+                return {
+                    ...state,
+                    skills: {
+                        ...state.skills,
+                        err: true
+                    }
+                }
             }
             let obj = {
                 name: state.skills.inputValue,

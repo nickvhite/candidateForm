@@ -1,10 +1,12 @@
 #form {
   background: #2d3d40;
-  padding: 50px 20px;
+  padding: 0 20px;
   margin: 0 auto;
   max-width: 1170px;
   display: flex;
   flex-wrap: wrap;
+  align-content: space-between;
+  position: relative;
 }
 @media (max-width: 992px) {
   #form {
@@ -16,7 +18,17 @@
     max-width: 750px;
   }
 }
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.41);
+  z-index: 1;
+}
 .form_left-side {
+  margin-top: 50px;
   flex-basis: 38%;
   padding: 0 15px;
 }
@@ -26,6 +38,7 @@
   }
 }
 .form_right-side {
+  margin-top: 50px;
   flex-basis: 56%;
   padding: 0 15px;
 }
@@ -35,10 +48,11 @@
   }
 }
 .form_submit-button {
-  margin: 0 15px;
-}
-.error label {
-  color: #a22c2c;
+  margin: 20px 15px 50px;
+  width: 100px;
+  height: 50px;
+  padding: 0;
+  position: relative;
 }
 .error input {
   box-shadow: inset 0px 2px 5px #a22c2c, inset 2px 0px 5px 0px #a22c2c, inset -2px 0px 5px #a22c2c, inset 0px -2px 5px #a22c2c;

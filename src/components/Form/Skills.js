@@ -13,6 +13,11 @@ const Skills = (props) => {
                     onChange={(e)=>{
                         props.inputFunction(e.target.value)
                     }}
+                    onKeyPress={(e) => {
+                        if (e.key === "Enter") {
+                            props.addfunction();
+                        }
+                    }}
                 />
                 <button className="skills_add-button" onClick={(e) => props.addfunction()}>Add</button>
                 {props.data.value.map((val, index) => (
